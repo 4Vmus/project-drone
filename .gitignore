@@ -1,0 +1,20 @@
+# Build output directories
+Obj/
+List/
+Exe/
+
+# Object and listing artifacts
+*.o
+*.obj
+*.lst
+*.map
+*.hex
+*.out
+*.bin
+*.elf
+*.pbi
+*.pbi.dep
+*.xcl
+
+# Local reference documents
+*.pdf
