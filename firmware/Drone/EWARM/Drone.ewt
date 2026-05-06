@@ -1432,18 +1432,51 @@
             <name>User</name>
             <group>
                 <name>Database</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Database\database.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Database\database.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Database\headers.h</name>
+                </file>
             </group>
             <group>
                 <name>Layer_1</name>
             </group>
             <group>
                 <name>Layer_2</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_2\LTIME.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_2\LTIME.h</name>
+                </file>
             </group>
             <group>
                 <name>Layer_3</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\SETTIMER.C</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\SETTIMER.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\user_mem.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\user_mem.h</name>
+                </file>
             </group>
             <group>
                 <name>Layer_4</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_4\flash_if.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_4\flash_if.h</name>
+                </file>
             </group>
             <file>
                 <name>$PROJ_DIR$\..\Src\freertos.c</name>

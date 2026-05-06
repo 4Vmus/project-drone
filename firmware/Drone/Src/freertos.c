@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "headers.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -184,10 +184,24 @@ void System_CommTask(void *argument)
 void System_LtimeTask(void *argument)
 {
   /* USER CODE BEGIN System_LtimeTask */
+	SetTimer(TID_BASE_10mSEC,	  TID_10mSEC,	  Time_10mSEC_Action);
+  SetTimer(TID_BASE_50mSEC,	  TID_50mSEC,	  Time_50mSEC_Action);
+  SetTimer(TID_BASE_100mSEC,  TID_100mSEC,	Time_100mSEC_Action);
+  SetTimer(TID_BASE_200mSEC,	TID_200mSEC,	Time_200mSEC_Action);
+  SetTimer(TID_BASE_500mSEC,	TID_500mSEC,	Time_500mSEC_Action);
+	SetTimer(TID_BASE_1SEC,			TID_1SEC,			Time_1000mSEC_Action);
+	
+	HAL_TIM_Base_Start_IT(&htim7);    //MAKE 1mSEC Timer
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
+		
+		 Task_Chk_Cnt[3]++;
+		
+		Time_1mSEC_Action();
+ 
+    SetTimer_Check();
   }
   /* USER CODE END System_LtimeTask */
 }

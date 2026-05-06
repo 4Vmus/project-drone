@@ -25,6 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "headers.h"
 
 /* USER CODE END Includes */
 
@@ -97,8 +98,11 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM1_Init();
+  MX_TIM7_Init();
   /* USER CODE BEGIN 2 */
 
+	Init_Var();
+	Init_Const();
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -252,6 +256,10 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
   }
   /* USER CODE BEGIN Callback 1 */
 
+	if (htim->Instance == TIM7)
+	{
+    bT1mSec = 1;
+  }
   /* USER CODE END Callback 1 */
 }
 
