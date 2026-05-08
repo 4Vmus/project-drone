@@ -145,7 +145,7 @@
                 <expressions>
                     <item>Task_Chk_Cnt</item>
                     <item>sys_on_time</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

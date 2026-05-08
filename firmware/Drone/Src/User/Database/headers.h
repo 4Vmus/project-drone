@@ -17,10 +17,12 @@
 
 //Layer 4
 #include "flash_if.h"
+#include "Init_esc.h"
 
 //Layer 3
 #include "user_mem.h"
 #include "SETTIMER.h"
+#include "esc_control.h"
 //Layer 2
 #include "LTIME.h"
 

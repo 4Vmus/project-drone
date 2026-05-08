@@ -103,6 +103,8 @@ int main(void)
 
 	Init_Var();
 	Init_Const();
+	ESC_Control_Init();
+	Init_ESC_Init();
   /* USER CODE END 2 */
 
   /* Init scheduler */
