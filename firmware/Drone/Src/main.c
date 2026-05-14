@@ -105,6 +105,8 @@ int main(void)
 	Init_Const();
 	ESC_Control_Init();
 	Init_ESC_Init();
+	App_Main_Init();
+	Control_Loop_Init();
   /* USER CODE END 2 */
 
   /* Init scheduler */

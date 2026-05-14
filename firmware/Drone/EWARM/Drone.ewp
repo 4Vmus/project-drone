@@ -1109,11 +1109,29 @@
                     <name>$PROJ_DIR$\..\Src\User\Database\database.h</name>
                 </file>
                 <file>
+                    <name>$PROJ_DIR$\..\Src\User\Database\common_def.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Database\drone_config.h</name>
+                </file>
+                <file>
                     <name>$PROJ_DIR$\..\Src\User\Database\headers.h</name>
                 </file>
             </group>
             <group>
                 <name>Layer_1</name>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_1\app_main.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_1\app_main.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_1\flight_state.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_1\flight_state.h</name>
+                </file>
             </group>
             <group>
                 <name>Layer_2</name>
@@ -1123,20 +1141,62 @@
                 <file>
                     <name>$PROJ_DIR$\..\Src\User\Layer_2\LTIME.h</name>
                 </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_2\SETTIMER.C</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_2\SETTIMER.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_2\control_loop.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_2\control_loop.h</name>
+                </file>
             </group>
             <group>
                 <name>Layer_3</name>
                 <file>
-                    <name>$PROJ_DIR$\..\Src\User\Layer_3\SETTIMER.C</name>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\attitude_estimator.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\Src\User\Layer_3\SETTIMER.h</name>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\attitude_estimator.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\baro_sensor.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\baro_sensor.h</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Src\User\Layer_3\esc_control.c</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Src\User\Layer_3\esc_control.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\failsafe.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\failsafe.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\imu_sensor.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\imu_sensor.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\mixer.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\mixer.h</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\pid_control.c</name>
+                </file>
+                <file>
+                    <name>$PROJ_DIR$\..\Src\User\Layer_3\pid_control.h</name>
                 </file>
                 <file>
                     <name>$PROJ_DIR$\..\Src\User\Layer_3\user_mem.c</name>

@@ -1,0 +1,21 @@
+///// INCLUDES ////////////////////////////////////////////////////////////////
+#include "baro_sensor.h"
+
+
+///// VARIABLES ///////////////////////////////////////////////////////////////
+static Baro_Sensor_Data_t baro_sensor_data;
+
+
+///// FUNCTIONS ///////////////////////////////////////////////////////////////
+void Baro_Sensor_Init(void)
+{
+}
+
+void Baro_Sensor_Update(void)
+{
+}
+
+const Baro_Sensor_Data_t *Baro_Sensor_GetData(void)
+{
+  return &baro_sensor_data;
+}

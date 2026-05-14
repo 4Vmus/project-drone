@@ -220,6 +220,7 @@ void System_ControlTask(void *argument)
   for(;;)
   {
     osDelay(1);
+    Control_Loop_Update();
   }
   /* USER CODE END System_ControlTask */
 }

@@ -1,0 +1,14 @@
+///// INCLUDES ////////////////////////////////////////////////////////////////
+#include "control_loop.h"
+#include "esc_control.h"
+
+
+///// FUNCTIONS ///////////////////////////////////////////////////////////////
+void Control_Loop_Init(void)
+{
+}
+
+void Control_Loop_Update(void)
+{
+  ESC_Control_Apply();
+}

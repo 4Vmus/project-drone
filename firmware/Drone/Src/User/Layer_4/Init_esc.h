@@ -3,18 +3,19 @@
 
 #include "main.h"
 #include "tim.h"
+#include "drone_config.h"
 
 ///// DEFINES /////////////////////////////////////////////////////////////////
-#define INIT_ESC_COUNT             4U
+#define INIT_ESC_COUNT             DRONE_MOTOR_COUNT
 
-#define INIT_ESC_ID_1              0U
-#define INIT_ESC_ID_2              1U
-#define INIT_ESC_ID_3              2U
-#define INIT_ESC_ID_4              3U
+#define INIT_ESC_ID_1              DRONE_MOTOR_ID_1
+#define INIT_ESC_ID_2              DRONE_MOTOR_ID_2
+#define INIT_ESC_ID_3              DRONE_MOTOR_ID_3
+#define INIT_ESC_ID_4              DRONE_MOTOR_ID_4
 
-#define INIT_ESC_PWM_MIN_US        1000U
-#define INIT_ESC_PWM_STOP_US       1000U
-#define INIT_ESC_PWM_MAX_US        2000U
+#define INIT_ESC_PWM_MIN_US        DRONE_ESC_PWM_MIN_US
+#define INIT_ESC_PWM_STOP_US       DRONE_ESC_PWM_STOP_US
+#define INIT_ESC_PWM_MAX_US        DRONE_ESC_PWM_MAX_US
 
 ///// VARIABLES ///////////////////////////////////////////////////////////////
 

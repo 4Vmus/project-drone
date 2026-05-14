@@ -1,0 +1,15 @@
+///// INCLUDES ////////////////////////////////////////////////////////////////
+#include "app_main.h"
+#include "flight_state.h"
+
+
+///// FUNCTIONS ///////////////////////////////////////////////////////////////
+void App_Main_Init(void)
+{
+  Flight_State_Init();
+}
+
+void App_Main_Update(void)
+{
+  Flight_State_Update();
+}

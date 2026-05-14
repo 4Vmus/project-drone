@@ -1,0 +1,22 @@
+///// INCLUDES ////////////////////////////////////////////////////////////////
+#include "mixer.h"
+
+
+///// VARIABLES ///////////////////////////////////////////////////////////////
+static Mixer_Output_t mixer_output;
+
+
+///// FUNCTIONS ///////////////////////////////////////////////////////////////
+void Mixer_Init(void)
+{
+}
+
+void Mixer_Update(const Mixer_Command_t *command)
+{
+  (void)command;
+}
+
+const Mixer_Output_t *Mixer_GetOutput(void)
+{
+  return &mixer_output;
+}
