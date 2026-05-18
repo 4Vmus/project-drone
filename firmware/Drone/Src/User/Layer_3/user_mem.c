@@ -216,7 +216,7 @@ void ReadMem(void)
   // ??? ?? ?? ??
   flag_mem_access = MEM_NORMAL;
   
-  if(Ifbit(flag_PF_mem, ID_PF_CONST_READ) != CHK_OK)
+  if(Chkbit(flag_PF_mem, ID_PF_CONST_READ) != CHK_CLEAR)
   {
     Init_Const();
     Clrbit(flag_PF_mem, ID_PF_CONST_READ);
@@ -224,7 +224,7 @@ void ReadMem(void)
     flag_write_mem = 1;
   }
   
-  if(Ifbit(flag_PF_mem, ID_PF_VAR_READ) != CHK_OK)
+  if(Chkbit(flag_PF_mem, ID_PF_VAR_READ) != CHK_CLEAR)
   {
     Init_Var();	
     Clrbit(flag_PF_mem, ID_PF_VAR_READ);
@@ -232,7 +232,7 @@ void ReadMem(void)
     flag_write_mem = 1;
   }
   
-  if(Ifbit(flag_PF_mem, ID_PF_MEM_FIRST) != CHK_OK)            // ?? ?? ? ?? ?? ?? ? ???
+  if(Chkbit(flag_PF_mem, ID_PF_MEM_FIRST) != CHK_CLEAR)            // ?? ?? ? ?? ?? ?? ? ???
   {	
     Init_Var();
     Init_Const();	
